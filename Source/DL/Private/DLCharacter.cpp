@@ -5,16 +5,20 @@
 #include "Components/CapsuleComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Kismet/KismetMathLibrary.h"
+#include "Settings/DLMovementSettings.h"
 
 ADLCharacter::ADLCharacter()
 {
 	PrimaryActorTick.bCanEverTick = true;
+
+	GetCharacterMovement()->bOrientRotationToMovement = true;
 }
 
 void ADLCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	AssignMovementSettings();
 }
 
 void ADLCharacter::Tick(float DeltaTime)
@@ -56,5 +60,18 @@ void ADLCharacter::RefreshLocomotion(float DeltaTime)
 			SpeedWhenStopping = CurrentSpeed;
 		}
 	}
+}
+
+void ADLCharacter::AssignMovementSettings()
+{
+	if (!MovementSettings) return;
+	
+	GetCharacterMovement()->RotationRate = MovementSettings->RotationRate;
+	GetCharacterMovement()->JumpZVelocity = MovementSettings->JumpZ_Velocity;
+	GetCharacterMovement()->MaxWalkSpeed = MovementSettings->JogSpeed;
+	GetCharacterMovement()->MaxWalkSpeedCrouched = MovementSettings->SpeedCrouched;
+	GetCharacterMovement()->AirControl = MovementSettings->AirControl;
+	GetCharacterMovement()->MinAnalogWalkSpeed = MovementSettings->MinAnalogWalkSpeed;
+	GetCharacterMovement()->GravityScale = MovementSettings->GravityScale;
 }
 

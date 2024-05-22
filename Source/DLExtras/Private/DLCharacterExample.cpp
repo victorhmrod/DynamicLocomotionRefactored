@@ -1,7 +1,8 @@
 ﻿// Fill out your copyright notice in the Description page of Project Settings.
 
-
 #include "DLCharacterExample.h"
+#include "EnhancedInputComponent.h"
+#include "EnhancedInputSubsystems.h"
 
 
 // Sets default values
@@ -28,5 +29,10 @@ void ADLCharacterExample::Tick(float DeltaTime)
 void ADLCharacterExample::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
+
+	// Enhanced inputs
+	if (auto* EnhancedInput{Cast<UEnhancedInputComponent>(PlayerInputComponent)}; IsValid(EnhancedInput))
+	{
+	}
 }
 

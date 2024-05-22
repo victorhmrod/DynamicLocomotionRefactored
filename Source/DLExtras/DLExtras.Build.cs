@@ -19,7 +19,8 @@ public class DLExtras : ModuleRules
                 "CoreUObject",
                 "Engine",
                 "Slate",
-                "SlateCore"
+                "SlateCore", 
+                "EnhancedInput"
             }
         );
     }

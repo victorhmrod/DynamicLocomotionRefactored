@@ -6,23 +6,26 @@
 #include "DLCharacter.h"
 #include "DLCharacterExample.generated.h"
 
+struct FInputActionValue;
+class UInputAction;
+class UInputMappingContext;
+
 UCLASS()
 class DLEXTRAS_API ADLCharacterExample : public ADLCharacter
 {
 	GENERATED_BODY()
 
 public:
-	// Sets default values for this character's properties
 	ADLCharacterExample();
 
 protected:
-	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
 public:
-	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
-	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+protected:
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Inputs", Meta = (DisplayThumbnail = false))
+	TObjectPtr<UInputMappingContext> InputMappingContext;
 };

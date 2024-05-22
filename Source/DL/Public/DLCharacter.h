@@ -14,18 +14,18 @@ class DL_API ADLCharacter : public ACharacter
 public:
 	ADLCharacter();
 
+	virtual void Tick(float DeltaTime) override;
+
 protected:
 	virtual void BeginPlay() override;
-
-public:
-	virtual void Tick(float DeltaTime) override;
 
 #pragma endregion
 
 #pragma region Blueprint Exposed
 
 #pragma region Variables
-	
+
+public:
 	UPROPERTY(BlueprintReadOnly)
 	float Delta{0};
 	
@@ -53,8 +53,8 @@ public:
 	UPROPERTY(BlueprintReadOnly)
 	float SpeedRequiredForLeap{800.f};
 	
-	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category="Settings")
-	TObjectPtr<ADLCharacter> MovementSettings;
+	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category="Settings")
+	TObjectPtr<class UDLMovementSettings> MovementSettings;
 
 #pragma endregion
 
@@ -67,6 +67,8 @@ public:
 #pragma region CPP Only
 private:
 	void RefreshLocomotion(float DeltaTime);
+
+	void AssignMovementSettings();
 	
 	bool bLocked{false};
 
