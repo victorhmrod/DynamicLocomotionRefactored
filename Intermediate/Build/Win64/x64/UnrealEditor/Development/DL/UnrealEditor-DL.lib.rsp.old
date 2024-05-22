@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-DL.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"E:\Unreal Projects\Rampage\Intermediate\Build\Win64\x64\RampageEditor\Development\UnrealEd\SharedPCH.UnrealEd.Cpp20.h.obj"
+"E:\Unreal Projects\Rampage\Plugins\DL\Intermediate\Build\Win64\x64\UnrealEditor\Development\DL\DL.cpp.obj"
+"E:\Unreal Projects\Rampage\Plugins\DL\Intermediate\Build\Win64\x64\UnrealEditor\Development\DL\Default.rc2.res"
+/OUT:"E:\Unreal Projects\Rampage\Plugins\DL\Intermediate\Build\Win64\x64\UnrealEditor\Development\DL\UnrealEditor-DL.lib"

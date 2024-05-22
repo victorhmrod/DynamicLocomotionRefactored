@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\unreal projects\\rampage\\plugins\\dynamiclocomotionrefactored\\source\\dl\\private\\dl.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\unreal projects\\rampage\\intermediate\\build\\win64\\x64\\rampageeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "e:\\unreal projects\\rampage\\plugins\\dynamiclocomotionrefactored\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\dl\\definitions.dl.h",
+            "e:\\unreal projects\\rampage\\plugins\\dynamiclocomotionrefactored\\source\\dl\\public\\dl.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
