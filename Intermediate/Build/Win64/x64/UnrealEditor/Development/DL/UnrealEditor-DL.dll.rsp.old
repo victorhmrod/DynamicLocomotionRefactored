@@ -35,9 +35,9 @@
 /NODEFAULTLIB:"LIBCD"
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN:6
-"E:\Unreal Projects\Rampage\Intermediate\Build\Win64\x64\RampageEditor\Development\UnrealEd\SharedPCH.UnrealEd.Cpp20.h.obj"
-"E:\Unreal Projects\Rampage\Plugins\DL\Intermediate\Build\Win64\x64\UnrealEditor\Development\DL\DL.cpp.obj"
-"E:\Unreal Projects\Rampage\Plugins\DL\Intermediate\Build\Win64\x64\UnrealEditor\Development\DL\Default.rc2.res"
+"E:\Unreal Projects\Rampage\Intermediate\Build\Win64\x64\RampageEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
+"E:\Unreal Projects\Rampage\Plugins\DynamicLocomotionRefactored\Intermediate\Build\Win64\x64\UnrealEditor\Development\DL\DL.cpp.obj"
+"E:\Unreal Projects\Rampage\Plugins\DynamicLocomotionRefactored\Intermediate\Build\Win64\x64\UnrealEditor\Development\DL\Default.rc2.res"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\CoreUObject\UnrealEditor-CoreUObject.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Engine\UnrealEditor-Engine.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Slate\UnrealEditor-Slate.lib"
@@ -68,7 +68,7 @@
 "synchronization.lib"
 "dwmapi.lib"
 "imm32.lib"
-/OUT:"E:\Unreal Projects\Rampage\Plugins\DL\Binaries\Win64\UnrealEditor-DL.dll"
-/IMPLIB:"E:\Unreal Projects\Rampage\Plugins\DL\Intermediate\Build\Win64\x64\UnrealEditor\Development\DL\UnrealEditor-DL.sup.lib"
-/PDB:"E:\Unreal Projects\Rampage\Plugins\DL\Binaries\Win64\UnrealEditor-DL.pdb"
+/OUT:"E:\Unreal Projects\Rampage\Plugins\DynamicLocomotionRefactored\Binaries\Win64\UnrealEditor-DL.dll"
+/IMPLIB:"E:\Unreal Projects\Rampage\Plugins\DynamicLocomotionRefactored\Intermediate\Build\Win64\x64\UnrealEditor\Development\DL\UnrealEditor-DL.sup.lib"
+/PDB:"E:\Unreal Projects\Rampage\Plugins\DynamicLocomotionRefactored\Binaries\Win64\UnrealEditor-DL.pdb"
 /ignore:4078

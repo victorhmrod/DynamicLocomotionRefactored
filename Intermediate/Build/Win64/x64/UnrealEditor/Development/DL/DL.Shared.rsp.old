@@ -1,5 +1,5 @@
 /I "."
-/I "E:\Unreal Projects\Rampage\Plugins\DL\Source\DL\Private"
+/I "E:\Unreal Projects\Rampage\Plugins\DynamicLocomotionRefactored\Source\DL\Private"
 /I "..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject\UHT"
 /I "..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject\VerseVMBytecode"
 /I "Runtime\CoreUObject\Public"
@@ -282,8 +282,8 @@
 /I "Editor\SceneDepthPickerMode\Public"
 /I "..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationEditMode\UHT"
 /I "Editor\AnimationEditMode\Public"
-/I "E:\Unreal Projects\Rampage\Plugins\DL\Source"
-/I "E:\Unreal Projects\Rampage\Plugins\DL\Source\DL\Public"
+/I "E:\Unreal Projects\Rampage\Plugins\DynamicLocomotionRefactored\Source"
+/I "E:\Unreal Projects\Rampage\Plugins\DynamicLocomotionRefactored\Source\DL\Public"
 /external:W0
 /external:I "ThirdParty\LibTiff\Source\Win64"
 /external:I "ThirdParty\LibTiff\Source"

@@ -282,6 +282,7 @@
 /I "Editor\SceneDepthPickerMode\Public"
 /I "..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationEditMode\UHT"
 /I "Editor\AnimationEditMode\Public"
+/I "E:\Unreal Projects\Rampage\Plugins\DynamicLocomotionRefactored\Intermediate\Build\Win64\UnrealEditor\Inc\DL\UHT"
 /I "E:\Unreal Projects\Rampage\Plugins\DynamicLocomotionRefactored\Source"
 /I "E:\Unreal Projects\Rampage\Plugins\DynamicLocomotionRefactored\Source\DL\Public"
 /external:W0
