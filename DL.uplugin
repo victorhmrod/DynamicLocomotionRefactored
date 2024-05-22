@@ -24,6 +24,11 @@
 			"Name": "DLExtras",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "DLEditor",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
 		}
 	]
 }

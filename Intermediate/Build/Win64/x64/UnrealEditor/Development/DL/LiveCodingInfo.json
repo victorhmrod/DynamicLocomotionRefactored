@@ -4,8 +4,10 @@
 		"Module.DL.cpp.obj": [
 			"DL.init.gen.cpp.obj",
 			"DLCharacter.gen.cpp.obj",
+			"DLMovementSettings.gen.cpp.obj",
+			"DL.cpp.obj",
 			"DLCharacter.cpp.obj",
-			"DL.cpp.obj"
+			"DLMovementSettings.cpp.obj"
 		]
 	}
 }

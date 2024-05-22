@@ -1,5 +1,11 @@
 {
 	"RemapUnityFiles": 
 	{
+		"Module.DLExtras.cpp.obj": [
+			"DLCharacterExample.gen.cpp.obj",
+			"DLExtras.init.gen.cpp.obj",
+			"DLCharacterExample.cpp.obj",
+			"DLExtras.cpp.obj"
+		]
 	}
 }

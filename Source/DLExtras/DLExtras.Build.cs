@@ -9,7 +9,7 @@ public class DLExtras : ModuleRules
         PublicDependencyModuleNames.AddRange(
             new string[]
             {
-                "Core",
+                "Core", "DL",
             }
         );
 
