@@ -16,15 +16,13 @@ void UDLAnimationInstance::NativeBeginPlay()
 void UDLAnimationInstance::NativeUpdateAnimation(float DeltaSeconds)
 {
 	Super::NativeUpdateAnimation(DeltaSeconds);
-
-	RefreshLocomotion();
 }
 
 void UDLAnimationInstance::NativeThreadSafeUpdateAnimation(float DeltaSeconds)
 {
 	Super::NativeThreadSafeUpdateAnimation(DeltaSeconds);
 
-	//RefreshLocomotion();
+	RefreshLocomotion();
 }
 
 void UDLAnimationInstance::RefreshLocomotion()
@@ -34,8 +32,8 @@ void UDLAnimationInstance::RefreshLocomotion()
 
 	bIsFalling = TryGetPawnOwner()->GetMovementComponent()->IsFalling();
 		
-	RotationRate = Character->CurrentSpeed;
-	Speed = Character->CurrentRotationRate;
+	RotationRate = Character->CurrentRotationRate;
+	Speed = Character->CurrentSpeed;
 	bIsMoving = Character->bIsMoving;
 	bIsAccelerating = Character->bIsAccelerating;
 	SpeedWhenStopping = Character->SpeedWhenStopping;

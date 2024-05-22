@@ -66,7 +66,7 @@ void ADLCharacter::AssignMovementSettings()
 {
 	if (!MovementSettings) return;
 	
-	//GetCharacterMovement()->RotationRate = MovementSettings->RotationRate;
+	GetCharacterMovement()->RotationRate = MovementSettings->RotationRate;
 	GetCharacterMovement()->JumpZVelocity = MovementSettings->JumpZ_Velocity;
 	GetCharacterMovement()->MaxWalkSpeed = MovementSettings->JogSpeed;
 	GetCharacterMovement()->MaxWalkSpeedCrouched = MovementSettings->SpeedCrouched;
